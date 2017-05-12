@@ -1,0 +1,10 @@
+{
+    "persistent": false,
+    "waitForFrameworks": false,
+    "suites": ["components/*.spec.html"],
+    "plugins": {
+        "local": {
+            "browsers": ["chrome"]
+        }
+    }
+}

@@ -1,0 +1,40 @@
+<script>
+  class EchoUsername extends HTMLElement {
+
+    static get observedAttributes() {
+      return ['username'];
+    }
+
+    connectedCallback() {
+      this.username = this.getAttribute('username') || '';
+    }
+
+    callMe() {
+
+    }
+
+    attributeChangedCallback(name, oldVal, newVal) {
+      if (this[name] !== newVal) {
+        this[name] = newVal;
+      }
+    }
+    get username() {
+      return this._username || '';
+    }
+
+    set username(value) {
+      this._username = value;
+      this.setAttribute('username', value);
+      this.render();
+    }
+    render() {
+      let message = `Hi${this._username ? ` ${this._username}` : ''}`;
+      this.innerHTML = `<div>${message}</div>`;
+    }
+  }
+  window.foo = 's';
+
+  if (!window.customElements.get('echo-username')) {
+    window.customElements.define('echo-username', EchoUsername);
+  }
+</script>

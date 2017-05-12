@@ -1,0 +1,22 @@
+{
+  "name": "testing-webcomponents-karma",
+  "description": "How to use karma to test web web components",
+  "main": "index.js",
+  "authors": [
+    "Jag Reehal"
+  ],
+  "license": "ISC",
+  "homepage": "",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "imd": "PolymerLabs/IMD#master",
+    "web-component-tester": "Polymer/web-component-tester#^5.0.1",
+    "webcomponentsjs": "^1.0.0"
+  }
+}
