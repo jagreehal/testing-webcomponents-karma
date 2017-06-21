@@ -1,7 +1,7 @@
 module.exports = function(config) {
   var configuration = {
-    //browsers: ["Chrome"],
-    browsers: ["ChromeCanaryHeadless"],
+    browsers: ["ChromeHeadless"],
+    // browsers: ["ChromeCanaryHeadless"],
     frameworks: ["jasmine"],
     files: [
       "bower_components/webcomponentsjs/webcomponents-lite.js",
