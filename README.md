@@ -1,0 +1,1 @@
+# Example of how using karma to test web components
